@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C2C Job Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+      background: #f8f9fa; 
+      padding: 20px;
+      color: #333;
+    }
+    .dashboard { max-width: 1200px; margin: 0 auto; }
+    .header { margin-bottom: 30px; }
+    .header h1 { font-size: 32px; margin-bottom: 8px; color: #0066cc; }
+    .header p { color: #666; font-size: 15px; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 30px 0; }
+    .metric-card { background: white; padding: 16px; border-radius: 8px; border: 1px solid #e0e0e0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .metric-label { font-size: 12px; color: #999; text-transform: uppercase; margin-bottom: 8px; }
+    .metric-value { font-size: 28px; font-weight: 600; color: #0066cc; }
+    .last-updated { color: #999; font-size: 13px; margin: 20px 0; }
+    .jobs-container { margin-top: 30px; }
+    .job-card { 
+      background: white; 
+      border: 1px solid #e0e0e0; 
+      border-left: 4px solid #0066cc;
+      border-radius: 4px; 
+      padding: 16px; 
+      margin-bottom: 12px;
+      transition: all 0.2s;
+    }
+    .job-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .job-title { font-size: 16px; font-weight: 600; margin: 0 0 8px 0; color: #333; }
+    .job-company { font-size: 14px; color: #666; margin: 0 0 12px 0; }
+    .job-meta { display: grid; grid-template-columns: auto auto auto; gap: 16px; margin-bottom: 12px; }
+    .job-meta-item { font-size: 13px; color: #666; }
+    .badges { margin-bottom: 12px; }
+    .badge { 
+      display: inline-block; 
+      background: #e3f2fd; 
+      color: #0066cc; 
+      padding: 4px 12px; 
+      border-radius: 4px; 
+      font-size: 12px; 
+      font-weight: 500;
+      margin-right: 8px;
+      margin-bottom: 4px;
+    }
+    .badge.c2c { background: #e8f5e9; color: #2e7d32; }
+    .badge.source { background: #fff3e0; color: #e65100; }
+    .empty { text-align: center; padding: 40px 20px; color: #999; }
+    .loading { text-align: center; padding: 40px 20px; color: #999; }
+    .error { background: #ffebee; border: 1px solid #ef5350; color: #c62828; padding: 16px; border-radius: 4px; margin: 20px 0; }
+  </style>
+</head>
+<body>
+
+<div class="dashboard">
+  <div class="header">
+    <h1>🔍 C2C DevOps/SRE Jobs Dashboard</h1>
+    <p>Live tracking of DevOps Engineer, Site Reliability Engineer (SRE), and Release Engineer contract roles across USA</p>
+  </div>
+  
+  <div class="metrics" i
+cd ~/Documents/c2c-job-scraper/autoemail
+
+# Create docs folder for dashboard
+mkdir -p docs
+
+# Create the dashboard HTML file
+cat > docs/index.html << 'EOF'
+<!DOCTYPE html>
+<html>
+<head>
+  <title>C2C Job Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+      background: #f8f9fa; 
+      padding: 20px;
+      color: #333;
+    }
+    .dashboard { max-width: 1200px; margin: 0 auto; }
+    .header { margin-bottom: 30px; }
+    .header h1 { font-size: 32px; margin-bottom: 8px; color: #0066cc; }
+    .header p { color: #666; font-size: 15px; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 30px 0; }
+    .metric-card { background: white; padding: 16px; border-radius: 8px; border: 1px solid #e0e0e0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .metric-label { font-size: 12px; color: #999; text-transform: uppercase; margin-bottom: 8px; }
+    .metric-value { font-size: 28px; font-weight: 600; color: #0066cc; }
+    .last-updated { color: #999; font-size: 13px; margin: 20px 0; }
+    .jobs-container { margin-top: 30px; }
+    .job-card { 
+      background: white; 
+      border: 1px solid #e0e0e0; 
+      border-left: 4px solid #0066cc;
+      border-radius: 4px; 
+      padding: 16px; 
+      margin-bottom: 12px;
+      transition: all 0.2s;
+    }
+    .job-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .job-title { font-size: 16px; font-weight: 600; margin: 0 0 8px 0; color: #333; }
+    .job-company { font-size: 14px; color: #666; margin: 0 0 12px 0; }
+    .job-meta { display: grid; grid-template-columns: auto auto auto; gap: 16px; margin-bottom: 12px; }
+    .job-meta-item { font-size: 13px; color: #666; }
+    .badges { margin-bottom: 12px; }
+    .badge { 
+      display: inline-block; 
+      background: #e3f2fd; 
+      color: #0066cc; 
+      padding: 4px 12px; 
+      border-radius: 4px; 
+      font-size: 12px; 
+      font-weight: 500;
+      margin-right: 8px;
+      margin-bottom: 4px;
+    }
+    .badge.c2c { background: #e8f5e9; color: #2e7d32; }
+    .badge.source { background: #fff3e0; color: #e65100; }
+    .empty { text-align: center; padding: 40px 20px; color: #999; }
+    .loading { text-align: center; padding: 40px 20px; color: #999; }
+    .error { background: #ffebee; border: 1px solid #ef5350; color: #c62828; padding: 16px; border-radius: 4px; margin: 20px 0; }
+  </style>
+</head>
+<body>
+
+<div class="dashboard">
+  <div class="header">
+    <h1>🔍 C2C DevOps/SRE Jobs Dashboard</h1>
+    <p>Live tracking of DevOps Engineer, Site Reliability Engineer (SRE), and Release Engineer contract roles across USA</p>
+  </div>
+  
+  <div class="metrics" id="metrics">
+    <div class="metric-card">
+      <div class="metric-label">Total Jobs</div>
+      <div class="metric-value">-</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">DevOps</div>
+      <div class="metric-value">-</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">SRE</div>
+      <div class="metric-value">-</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Release Eng</div>
+      <div class="metric-value">-</div>
+    </div>
+  </div>
+  
+  <div class="last-updated" id="last-updated">Loading...</div>
+  
+  <div class="jobs-container">
+    <div class="loading" id="loading">📊 Loading jobs...</div>
+    <div id="jobs"></div>
+  </div>
+</div>
+
+<script>
+function loadDashboard() {
+  fetch('jobs.json')
+    .then(response => {
+      if (!response.ok) throw new Error('jobs.json not found');
+      return response.json();
+    })
+    .then(data => {
+      document.getElementById('loading').style.display = 'none';
+      
+      // Update metrics
+      const metrics = document.querySelectorAll('.metric-value');
+      metrics[0].textContent = data.total_jobs || 0;
+      metrics[1].textContent = data.roles.devops || 0;
+      metrics[2].textContent = data.roles.sre || 0;
+      metrics[3].textContent = data.roles.release || 0;
+      
+      // Update timestamp
+      const date = new Date(data.timestamp);
+      document.getElementById('last-updated').textContent = 
+        `Last updated: ${date.toLocaleDateString()} at ${date.toLocaleTimeString()}`;
+      
+      // Render jobs
+      if (!data.jobs || data.jobs.length === 0) {
+        document.getElementById('jobs').innerHTML = 
+          '<div class="empty">📭 No jobs found. Check back tomorrow!</div>';
+        return;
+      }
+      
+      const jobsHtml = data.jobs.map(job => `
+        <div class="job-card">
+          <h3 class="job-title">${job.title}</h3>
+          <p class="job-company">
+            <strong>${job.company}</strong> • ${job.location}
+          </p>
+          <div class="job-meta">
+            <div class="job-meta-item">💰 ${job.salary}</div>
+            <div class="job-meta-item">📅 ${job.posted}</div>
+            <div class="job-meta-item">🔗 ${job.source}</div>
+          </div>
+          <div class="badges">
+            <span class="badge c2c">✓ C2C Contract</span>
+            <span class="badge">${job.type.toUpperCase()}</span>
+            <span class="badge source">${job.source}</span>
+          </div>
+        </div>
+      `).join('');
+      
+      document.getElementById('jobs').innerHTML = jobsHtml;
+    })
+    .catch(error => {
+      document.getElementById('loading').innerHTML = 
+        '<div class="error">⚠️ Error loading jobs.json. The scraper may not have run yet. Check back in a few minutes.</div>';
+      console.error('Error:', error);
+    });
+}
+
+// Load on page load
+loadDashboard();
+
+// Refresh every 5 minutes
+setInterval(loadDashboard, 5 * 60 * 1000);
+</script>
+
+</body>
+</html>
