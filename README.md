@@ -1,62 +1,88 @@
-# 🔍 C2C DevOps/SRE Job Dashboard
+# 🔍 C2C DevOps/SRE Job Dashboard - USA
 
-Auto-updated daily | Last: 2026-04-16 16:50:45 UTC
+**Auto-updated daily at 8 AM UTC** | Last: 2026-04-16 17:08:54 UTC
 
 ## 📊 Today's Summary
 
 | Role | Count |
 |------|-------|
-| **Total C2C Jobs** | **5** |
-| DevOps Engineer | 2 |
-| SRE | 1 |
-| Release Engineer | 1 |
-| Platform Engineer | 1 |
+| **Total C2C Jobs Found** | **0** |
+| DevOps Engineer | 0 |
+| SRE | 0 |
+| Release Engineer | 0 |
+| Platform Engineer | 0 |
 
 ---
 
-## 💼 DevOps Engineer (2)
+## 💼 DevOps Engineer (0)
 
-| Company | Job Title | Location | Salary | Link |
-|---------|-----------|----------|--------|------|
-| TechCorp | Senior DevOps Engineer (C2C) | Remote | $80-100/hr | [Apply](https://example.com/job1) |
-| FinTech Corp | DevOps Specialist (Independent Contracto... | Remote | $85-105/hr | [Apply](https://example.com/job5) |
+*No C2C DevOps jobs found today. Check back later!*
 
 
 ---
 
-## 🚀 SRE / Site Reliability Engineer (1)
+## 🚀 SRE / Site Reliability Engineer (0)
 
-| Company | Job Title | Location | Salary | Link |
-|---------|-----------|----------|--------|------|
-| CloudCo | Site Reliability Engineer - 1099 Contrac... | USA | $90-110/hr | [Apply](https://example.com/job2) |
+*No C2C SRE jobs found today. Check back later!*
 
 
 ---
 
-## 🔧 Release Engineer (1)
+## 🔧 Release Engineer (0)
 
-| Company | Job Title | Location | Salary | Link |
-|---------|-----------|----------|--------|------|
-| DevOps Inc | Release Engineer (Contract-to-Hire) | Remote | $70-85/hr | [Apply](https://example.com/job3) |
+*No C2C Release Engineer jobs found today. Check back later!*
 
 
 ---
 
-## 🏗️ Platform Engineer (1)
+## 🏗️ Platform Engineer (0)
 
-| Company | Job Title | Location | Salary | Link |
-|---------|-----------|----------|--------|------|
-| Infrastructure Co | Platform Engineer - C2C Independent | Remote | $95-120/hr | [Apply](https://example.com/job4) |
+*No C2C Platform Engineer jobs found today. Check back later!*
 
 
 ---
 
-## 📁 Data Files
+## 📁 Job Data Files
 
-* `jobs.json` - Raw job data (JSON format)
-* `README.md` - This dashboard
+- **`jobs.json`** — Raw job data (JSON format for API access)
+- **`README.md`** — This live dashboard
 
-**Scraper:** Runs daily at 8 AM UTC  
-**Sources:** Indeed, Dice, Toptal, and demo jobs  
+---
+
+## 🔍 Data Sources
+
+| Source | Type | Location |
+|--------|------|----------|
+| Indeed | Job Board | USA |
+| LinkedIn | Professional Network | USA |
+| GitHub Jobs | Developer Jobs | USA |
+| Stack Overflow | Developer Community | USA |
+| Dice | Tech Contracts | USA |
+| Toptal | Freelance Platform | Remote |
+| Upwork | Gig Platform | USA |
+| FlexJobs | Remote Jobs | USA |
+| AngelList | Startup Jobs | USA |
+
+---
+
+## ⚙️ Scraper Details
+
+**Runs:** Daily at 8 AM UTC  
 **Filter:** C2C contracts only  
-**Last update:** 2026-04-16T16:50:45.645274
+**Region:** United States of America  
+**Updated:** 2026-04-16T17:08:54.724045  
+**Next Run:** Tomorrow 8 AM UTC  
+
+---
+
+## 💡 Tips
+
+1. **Click "Apply" links** to go directly to job postings
+2. **Apply immediately** — C2C roles fill fast (24-48 hours)
+3. **Check daily** — New jobs posted each morning
+4. **Keep resume ready** — Have your rates ($60-150/hr typical) ready
+5. **Respond to recruiters** — Messages usually come within hours
+
+---
+
+**Happy job hunting! 🎯**
