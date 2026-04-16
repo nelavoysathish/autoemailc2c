@@ -1,0 +1,44 @@
+name: 📊 C2C Jobs Dashboard
+
+on:
+  schedule:
+    # Every day at 8 AM UTC (3 AM EST)
+    - cron: '0 8 * * *'
+  
+  # Manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      # 1. Get the code
+      - uses: actions/checkout@v4
+      
+      # 2. Setup Python
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      # 3. Install requirements
+      - run: pip install requests
+      
+      # 4. Run the scraper
+      - name: 🔍 Scrape C2C Jobs
+        run: python c2c_job_scraper.py
+      
+      # 5. Setup git
+      - run: |
+          git config user.email "action@github.com"
+          git config user.name "C2C Jobs Bot"
+      
+      # 6. Commit changes
+      - run: |
+          git add README.md jobs.json
+          git commit -m "📊 Daily C2C jobs update: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes"
+      
+      # 7. Push to GitHub
+      - run: git push origin main || echo "Nothing to push"
