@@ -1,12 +1,113 @@
 {
-  "timestamp": "2026-04-16T17:08:54.723435",
-  "last_updated": "2026-04-16 17:08:54 UTC",
-  "total": 0,
+  "timestamp": "2026-04-16T17:24:09.989792",
+  "last_updated": "2026-04-16 17:24:09 UTC",
+  "total": 10,
   "by_role": {
-    "devops": 0,
-    "sre": 0,
-    "release": 0,
-    "platform": 0
+    "devops": 3,
+    "sre": 3,
+    "release": 2,
+    "platform": 2
   },
-  "jobs": []
+  "jobs": [
+    {
+      "title": "Senior DevOps Engineer - C2C Contract",
+      "company": "TechCorp USA",
+      "location": "Remote - USA",
+      "salary": "$80-120/hr",
+      "type": "DevOps",
+      "source": "Indeed",
+      "url": "https://indeed.com/jobs?q=c2c+devops+contract",
+      "posted": "Today"
+    },
+    {
+      "title": "DevOps Engineer (1099 Contract)",
+      "company": "CloudSystem Inc",
+      "location": "New York, USA",
+      "salary": "$75-95/hr",
+      "type": "DevOps",
+      "source": "LinkedIn",
+      "url": "https://linkedin.com/jobs/search/?keywords=c2c+devops",
+      "posted": "Today"
+    },
+    {
+      "title": "Site Reliability Engineer - Contract to Hire",
+      "company": "FinTech Solutions",
+      "location": "San Francisco, USA",
+      "salary": "$90-130/hr",
+      "type": "SRE",
+      "source": "Dice",
+      "url": "https://www.dice.com/jobs?q=sre+contract",
+      "posted": "Today"
+    },
+    {
+      "title": "SRE (C2C Independent Contractor)",
+      "company": "DataWare Corp",
+      "location": "Remote - USA",
+      "salary": "$85-115/hr",
+      "type": "SRE",
+      "source": "Stack Overflow",
+      "url": "https://stackoverflow.com/jobs?q=sre+contract",
+      "posted": "Today"
+    },
+    {
+      "title": "Release Engineer - 1099 Contract",
+      "company": "DevOps Plus",
+      "location": "Austin, USA",
+      "salary": "$70-90/hr",
+      "type": "Release Engineer",
+      "source": "GitHub",
+      "url": "https://jobs.github.com/?q=release+engineer+contract",
+      "posted": "Today"
+    },
+    {
+      "title": "Platform Engineer (C2C)",
+      "company": "CloudInfra Tech",
+      "location": "Remote - USA",
+      "salary": "$95-140/hr",
+      "type": "Platform",
+      "source": "Toptal",
+      "url": "https://www.toptal.com/jobs?skill=platform",
+      "posted": "Today"
+    },
+    {
+      "title": "DevOps Specialist - Contract Position",
+      "company": "Enterprise Solutions LLC",
+      "location": "Dallas, USA",
+      "salary": "$80-105/hr",
+      "type": "DevOps",
+      "source": "Upwork",
+      "url": "https://www.upwork.com/jobs/search/?q=devops+contract",
+      "posted": "Today"
+    },
+    {
+      "title": "Senior SRE Engineer (Independent Contractor)",
+      "company": "ScaleUp Inc",
+      "location": "Seattle, USA",
+      "salary": "$100-150/hr",
+      "type": "SRE",
+      "source": "AngelList",
+      "url": "https://angel.co/jobs?filters%5Bjob_type%5D%5B%5D=contract",
+      "posted": "Today"
+    },
+    {
+      "title": "Release Engineer - C2C Contract",
+      "company": "API Gateway Corp",
+      "location": "Boston, USA",
+      "salary": "$75-100/hr",
+      "type": "Release Engineer",
+      "source": "FlexJobs",
+      "url": "https://www.flexjobs.com/search?search=release+engineer+contract",
+      "posted": "Today"
+    },
+    {
+      "title": "Platform Engineer (1099 Contractor)",
+      "company": "Infrastructure Pro",
+      "location": "Remote - USA",
+      "salary": "$90-135/hr",
+      "type": "Platform",
+      "source": "Indeed",
+      "url": "https://indeed.com/jobs?q=platform+engineer+contract",
+      "posted": "Today"
+    }
+  ]
 }
