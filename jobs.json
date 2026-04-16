@@ -1,12 +1,63 @@
 {
-  "timestamp": "2026-04-16T16:38:13.123816",
-  "last_updated": "2026-04-16 16:38:13 UTC",
-  "total": 0,
+  "timestamp": "2026-04-16T16:50:45.644961",
+  "last_updated": "2026-04-16 16:50:45 UTC",
+  "total": 5,
   "by_role": {
-    "devops": 0,
-    "sre": 0,
-    "release": 0,
-    "platform": 0
+    "devops": 2,
+    "sre": 1,
+    "release": 1,
+    "platform": 1
   },
-  "jobs": []
+  "jobs": [
+    {
+      "title": "Senior DevOps Engineer (C2C)",
+      "company": "TechCorp",
+      "location": "Remote",
+      "salary": "$80-100/hr",
+      "type": "DevOps",
+      "source": "Demo",
+      "url": "https://example.com/job1",
+      "posted": "Today"
+    },
+    {
+      "title": "Site Reliability Engineer - 1099 Contract",
+      "company": "CloudCo",
+      "location": "USA",
+      "salary": "$90-110/hr",
+      "type": "SRE",
+      "source": "Demo",
+      "url": "https://example.com/job2",
+      "posted": "Today"
+    },
+    {
+      "title": "Release Engineer (Contract-to-Hire)",
+      "company": "DevOps Inc",
+      "location": "Remote",
+      "salary": "$70-85/hr",
+      "type": "Release Engineer",
+      "source": "Demo",
+      "url": "https://example.com/job3",
+      "posted": "Today"
+    },
+    {
+      "title": "Platform Engineer - C2C Independent",
+      "company": "Infrastructure Co",
+      "location": "Remote",
+      "salary": "$95-120/hr",
+      "type": "Platform",
+      "source": "Demo",
+      "url": "https://example.com/job4",
+      "posted": "Today"
+    },
+    {
+      "title": "DevOps Specialist (Independent Contractor)",
+      "company": "FinTech Corp",
+      "location": "Remote",
+      "salary": "$85-105/hr",
+      "type": "DevOps",
+      "source": "Demo",
+      "url": "https://example.com/job5",
+      "posted": "Today"
+    }
+  ]
 }
