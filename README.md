@@ -1,6 +1,6 @@
 # 🔍 C2C DevOps/SRE Job Dashboard - USA
 
-**Auto-updated daily at 8 AM UTC** | Last: 2026-06-27 09:53:43 UTC
+**Auto-updated daily at 8 AM UTC** | Last: 2026-06-28 10:17:42 UTC
 
 ## 📊 Today's Summary
 
@@ -59,7 +59,7 @@
 ## 📁 Data & Sources
 
 - **`jobs.json`** — Raw job data (JSON)
-- **Data updated:** 2026-06-27T09:53:43.786333
+- **Data updated:** 2026-06-28T10:17:42.536321
 - **Next run:** Tomorrow 8 AM UTC
 
 **Sources:** Indeed, LinkedIn, GitHub, Stack Overflow, Dice, Toptal, Upwork, FlexJobs, AngelList
